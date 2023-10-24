@@ -31,7 +31,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
   tags = {
-    "Name" = "New webserver jenkins"
+    "Name" = "New webserver Jenkins"
   }
 
   user_data = <<-EOF
@@ -51,14 +51,14 @@ resource "aws_security_group" "web_sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["54.175.131.7/32"]
+    cidr_blocks = ["178.165.35.210/32"]
   }
 
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["54.175.131.7/32"]
+    cidr_blocks = ["178.165.35.210/32"]
   }
 
   egress {
