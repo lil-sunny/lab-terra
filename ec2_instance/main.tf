@@ -45,7 +45,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_security_group" "web_sg" {
-  name = "Ec2 instance sg"
+  name = "Ec2 instance jenkins"
 
   ingress {
     from_port   = 80
