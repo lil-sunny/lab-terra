@@ -1,5 +1,5 @@
 variable "bucket_name" {
-    default = "my-terraform-bucket-qwzxcaras"
+    default = "my-terraform-bucket-jenkins-qwzxcaras"
 }
 
 variable "acl_value" {
