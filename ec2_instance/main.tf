@@ -31,7 +31,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
   tags = {
-    "Name" = "New webserver Jenkins"
+    "Name" = "New webserver Jenkins_1"
   }
 
   user_data = <<-EOF
@@ -45,7 +45,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_security_group" "web_sg" {
-  name = "Ec2 instance sg"
+  name = "Ec2 instance sg_Jenkins"
 
   ingress {
     from_port   = 80
